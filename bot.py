@@ -57,5 +57,5 @@ async def on_voice_state_update(member, before, after):
                     await text_channel.delete()
                     del voice_to_text_channels[guild.id][voice_channel.id]
 
-bot.run(os.getenv("MTM4NjEwMjYyODk0OTE2ODEyOA.G_jADv.2ws8Abn_MGt5VdBZVkmVqETwp5igdvJoiEQqYQ"))  # <-- تشغيل التوكن من البيئة
+bot.run(token)  # <-- تشغيل التوكن من البيئة
 
