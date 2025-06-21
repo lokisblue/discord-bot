@@ -58,7 +58,8 @@ async def on_voice_state_update(member, before, after):
                     del voice_to_text_channels[guild.id][voice_channel.id]
 
 
+import os
 token = os.getenv("DISCORD_TOKEN")
-bot.run("MTM4NjEwMjYyODk0OTE2ODEyOA.GlOaTN.esnGIqr8Un-k0oEW8Du5QkjeVwpOiYgdgOGN6w")
+bot.run(token)
   # <-- تشغيل التوكن من البيئة
 
