@@ -59,7 +59,8 @@ async def on_voice_state_update(member, before, after):
 
 
 import os
-token = os.getenv("DISCORD_TOKEN")
-bot.run(token)
-  # <-- تشغيل التوكن من البيئة
 
+token = os.getenv("DISCORD_TOKEN")
+print(f"TOKEN FROM ENV: {token}")  # <== فقط للتجربة، احذفها بعد التأكد
+
+bot.run(token)
